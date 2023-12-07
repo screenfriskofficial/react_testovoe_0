@@ -7,7 +7,7 @@ import { MenuOutlined } from '@ant-design/icons';
 const { useBreakpoint } = Grid;
 
 const SideContent = props => {
-	const { sideContent, sideContentWidth = 250, border } = props
+	const { sideContent, sideContentWidth = 250, border} = props
 	return (
 		<div className={`side-content ${border? 'with-border': ''}`} style={{width: `${sideContentWidth}px`}}>
 			{sideContent}
