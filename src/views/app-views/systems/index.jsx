@@ -5,10 +5,10 @@ import Loading from "components/shared-components/Loading";
 const Systems = ({ match }) => (
   <Suspense fallback={<Loading cover="content" />}>
     <Switch>
-      <Redirect exact from={`${match.url}`} to={`${match.url}/logs`} />
+      <Redirect exact from={`${match.url}`} to={`${match.url}/system-data`} />
       <Route
-        path={`${match.url}/logs`}
-        component={lazy(() => import(`./logs`))}
+        path={`${match.url}/system-data`}
+        component={lazy(() => import(`./system-data`))}
       />
       <Route
         path={`${match.url}/mobile-app`}

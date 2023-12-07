@@ -38,8 +38,8 @@ const systemsNavTree = [
         submenu: [],
       },
       {
-        key: "extra-systems-logs",
-        path: `${APP_PREFIX_PATH}/systems/logs`,
+        key: "extra-systems-system-data",
+        path: `${APP_PREFIX_PATH}/systems/system-data`,
         title: "Логи",
         icon: FileTextOutlined,
         breadcrumb: true,
