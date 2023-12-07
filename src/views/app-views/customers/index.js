@@ -7,16 +7,16 @@ const Customers = ({ match }) => (
     <Switch>
       <Redirect exact from={`${match.url}`} to={`${match.url}/profile`} />
       <Route
-        path={`${match.url}/profile`}
-        component={lazy(() => import(`./profile`))}
-      />
-      <Route
         path={`${match.url}/setting`}
         component={lazy(() => import(`./setting`))}
       />
       <Route
         path={`${match.url}/user-list`}
         component={lazy(() => import(`./user-list`))}
+      />
+      <Route
+        path={`${match.url}/group-list`}
+        component={lazy(() => import(`./group-list`))}
       />
     </Switch>
   </Suspense>

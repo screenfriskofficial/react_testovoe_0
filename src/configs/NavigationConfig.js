@@ -122,8 +122,8 @@ const dashBoardNavTree = [
             submenu: [],
           },
           {
-            key: "extra-customers-setting",
-            path: `${APP_PREFIX_PATH}/customers/user-list`,
+            key: "extra-customers-group-list",
+            path: `${APP_PREFIX_PATH}/customers/group-list`,
             title: "Группы клиентов",
             icon: "",
             breadcrumb: true,
