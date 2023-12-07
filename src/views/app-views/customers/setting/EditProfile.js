@@ -68,7 +68,7 @@ export class EditProfile extends Component {
     }
     const onFinish = (values) => {
       const key = "updatable";
-      message.loading({ content: "Updating...", key });
+      message.loading({ content: "Updating...", key, duration: 1000 });
       setTimeout(() => {
         this.setState({
           ...user,
@@ -81,6 +81,7 @@ export class EditProfile extends Component {
           city: values.city,
           postcode: values.postcode,
         });
+        setTimeout(() => {});
         message.success({ content: "Done!", key, duration: 1000 });
       }, 1000);
     };

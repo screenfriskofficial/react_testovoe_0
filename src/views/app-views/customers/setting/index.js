@@ -14,7 +14,6 @@ const SettingOption = ({ match, location }) => {
       <Menu.Item key={`${match.url}/edit-profile/:userId`}>
         <UserOutlined />
         <span>Edit Profile</span>
-        <Link to={"edit-profile/:userId"} />
       </Menu.Item>
     </Menu>
   );

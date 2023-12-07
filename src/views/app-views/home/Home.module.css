@@ -1,0 +1,64 @@
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.selectItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    height: 800px;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.boxItems {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.sendBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    height: 800px;
+    background-color: #151515;
+    overflow: hidden;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxItem {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 2px solid #a7c957;
+    color: #fff;
+}
+
+.boxImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+}
