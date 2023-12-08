@@ -130,6 +130,7 @@ const Home = () => {
         {furniture.map((obj) => (
           <Draggable
             key={obj.id}
+            defaultPosition={{ x: obj.x, y: obj.y }}
             onStop={(event, data) => {
               const updatedFurniture = furniture.map((item) => {
                 if (item.id === obj.id) {
